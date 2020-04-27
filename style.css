@@ -1,18 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-* {
     list-style: none;
-}
-
-* {
     text-decoration: none;
-}
-
-* {
     font-family:  'メイリオ', Meiryo, '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -22,12 +14,15 @@
 header {
     background-color: rgb(17, 29, 83);
     height: 58px;
-   
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
 }
 
 .header-left {
     padding-left:143px;
-    padding-top: 3px;
     display: inline-block;
 }
 
@@ -41,6 +36,22 @@ header {
 .header-right li {
     display: inline-block;
     
+}
+
+.header-li {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 0px;
+    background-color: aliceblue;
+}
+
+.header-li ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-li li:hover {
+    color: rgb(26, 40, 160);
 }
 
 .time {
@@ -68,27 +79,12 @@ header {
     margin-bottom: 60px;
 }
 
-.top ul {
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.top li {
-    display: inline-block;
-    width: 11%;
-    margin: 20px 0;
-}
-
-.top li:hover {
-    color: rgb(26, 40, 160);
-}
-
 .top-view {
     width: 100%;
-    height: 670px;
+    height: 790px;
     background-image: url(https://www.aitou.co.jp/img/home/promo_bg.jpg);
     background-position: center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +95,7 @@ header {
     background-color: rgb(40,61,114);
     color: aliceblue;
     width: 850px;
-    height: 180px;
+    height: max-content;
     padding: 10px;
     position: absolute;
     left: 0px;
@@ -133,8 +129,8 @@ header {
 .con {
     background-color: rgb(234,238,244);
     color: black;
-    width: 450px;
-    height: 350px;
+    width: 530px;
+    height: max-content;
     padding: 35px 40px;
     text-align: center;
     display: flex;
@@ -258,7 +254,7 @@ header {
 
 .works,.recruit {
     width: 100%;
-    height: 300px;
+    height: 420px;
     padding: 60px 50px;
     color: aliceblue;
     transition: all 0.3s;
