@@ -1,15 +1,25 @@
 @media all and (max-width: 768px) {
+    
+    header {
+        position: fixed;
+        right: auto;
+    }
 
     .header-right,.header-li {
         display: none;
     }
-
+    
     .menu-icon {
         display: block;
     }
 
     .header-left {
         margin-left: 20px;
+    }
+
+    .header-left img {
+        width: 70%;
+        padding-top: 10px;
     }
 
     .top {
@@ -48,7 +58,7 @@
 
     .con {
         width: 100%;
-        margin: 20px;
+        margin: 20px 0px;
     } 
 
     .products {
