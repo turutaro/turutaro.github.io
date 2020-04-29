@@ -21,38 +21,50 @@ header {
     z-index: 10;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .header-left {
-    padding-left:143px;
+    margin-left:143px;
     display: inline-block;
 }
 
 .header-right { 
-    float: right;
     font-size: 14px;
     color: aliceblue;
     margin-right: 160px;
 }
 
 .header-right li {
-    display: inline-block;
-    
+   display: inline-block;
 }
 
 .header-li {
     font-size: 14px;
     font-weight: 700;
-    padding: 20px 0px;
-    background-color: aliceblue;
+    padding: 15px 0px;
+    background-color: #fff;
 }
 
 .header-li ul {
     display: flex;
     justify-content: space-around;
+    margin: 0px 80px;
 }
 
 .header-li li:hover {
     color: rgb(26, 40, 160);
 }
+
+.menu-icon {
+    color: white;
+    font-size: 25px;
+    padding: 16px ;
+    display: none;
+  }
 
 .time {
     background-color: aliceblue;
@@ -197,7 +209,6 @@ header {
 }
 
 .pro-text {
-    width: max-content;
     margin-left: 165px;
     padding-top: 100px;
     color: aliceblue;
@@ -240,6 +251,10 @@ header {
     position: absolute;
     right: 30px;
     top: 225px;
+}
+
+.pro-img2 {
+    display: none;
 }
 
 .works-recruit {
