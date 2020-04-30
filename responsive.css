@@ -94,6 +94,7 @@
     .pro-img2 {
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
     }
 
     .pro-img2 img {
