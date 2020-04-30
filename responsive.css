@@ -2,7 +2,7 @@
     
     header {
         position: fixed;
-        right: auto;
+        right: 0px;
     }
 
     .header-right,.header-li {
@@ -66,8 +66,12 @@
     }
 
     .pro-text {
-        margin-left: 20px;
         padding-top: 50px;
+        margin-left: 0px;
+    }
+
+    .pro-text h1,.pro-text h2,.pro-text p {
+        margin-left: 20px;
     }
 
     .pro-text h2 {
@@ -93,13 +97,12 @@
     }
 
     .pro-img2 img {
-        width: 50%;
-        margin-right: 10px;
+        width: 40%;
     }
 
     .pro-text a {
-        width: 100%;
-        margin: 10px 20px 50px 0px;
+        width: 90%;
+        margin: 20px 0px 50px 20px;
     }
 
     .works-recruit {
@@ -111,7 +114,7 @@
     }
 
     .works-recruit img {
-        width: 60%;
+        width: 80%;
     }
 
     .works-recruit h2 {
@@ -136,10 +139,11 @@
 
     .form-head {
         margin: 0px;
+        width: 100%;
     }
 
     .form-head img {
-        width: 60%;
+        width: 40%;
     }
 
     .form-head h2 {
@@ -156,16 +160,30 @@
         margin: 0px;
     }
 
-    .form-time {
-        margin: 5px 0px;
-    }
-
     .tel-form,.mail-form {
         font-size: 14px;
     }
 
+    .tel-form {
+        flex-direction: column;
+        height: 80px;
+        line-height: 30px;
+    }
+
+    .tel-conect {
+        padding-top: 10px;
+    }
+
+    .form-sp1 {
+        padding: 0px;
+    }
+
     .form-sp2 {
         font-size: 20px;
+    }
+
+    .form-time {
+        margin: 5px 0px;
     }
 
     .border2 {
@@ -176,5 +194,9 @@
 
     .footer-right {
         justify-content: center;
+    }
+
+    .li-left {
+        padding-right: 20px;
     }
 }
