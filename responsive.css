@@ -98,6 +98,7 @@
 
     .pro-img2 img {
         width: 40%;
+        height: auto;
     }
 
     .pro-text a {
